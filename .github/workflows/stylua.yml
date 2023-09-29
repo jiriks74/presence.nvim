@@ -1,7 +1,7 @@
 name: StyLua
 on: [push, pull_request]
 jobs:
-  StyLua check:
+  StyLuacheck:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
