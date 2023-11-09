@@ -116,7 +116,7 @@ function Presence:setup(...)
 
 	-- General options
 	self:set_option("auto_update", 1)
-	self:set_option("client_id", "793271441293967371")
+	self:set_option("client_id", "1172122807501594644")
 	self:set_option("debounce_timeout", 10)
 	self:set_option("neovim_image_text", "The One True Text Editor")
 	self:set_option("main_image", "neovim")
