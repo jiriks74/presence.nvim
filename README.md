@@ -62,7 +62,7 @@ require("presence").setup({
     auto_update         = true,                       -- Update activity based on autocmd events (if `false`, map or manually execute `:lua package.loaded.presence:update()`)
     neovim_image_text   = "The One True Text Editor", -- Text displayed when hovered over the Neovim image
     main_image          = "neovim",                   -- Main image display (either "neovim" or "file")
-    client_id           = "793271441293967371",       -- Use your own Discord application client id (not recommended)
+    client_id           = "1172122807501594644",       -- Use your own Discord application client id (not recommended)
     log_level           = nil,                        -- Log messages at or above this level (one of the following: "debug", "info", "warn", "error")
     debounce_timeout    = 10,                         -- Number of seconds to debounce events (or calls to `:lua package.loaded.presence:update(<filename>, true)`)
     enable_line_number  = false,                      -- Displays the current line number instead of the current project
@@ -91,7 +91,7 @@ Or if global variables are more your thing, you can use any of the following ins
 let g:presence_auto_update         = 1
 let g:presence_neovim_image_text   = "The One True Text Editor"
 let g:presence_main_image          = "neovim"
-let g:presence_client_id           = "793271441293967371"
+let g:presence_client_id           = "1172122807501594644"
 let g:presence_log_level
 let g:presence_debounce_timeout    = 10
 let g:presence_enable_line_number  = 0
