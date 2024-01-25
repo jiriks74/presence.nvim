@@ -1,3 +1,4 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/a85cae15727448debfe9d8f2ad4ad1b3)](https://app.codacy.com/gh/jiriks74/presence.nvim?utm_source=github.com&utm_medium=referral&utm_content=jiriks74/presence.nvim&utm_campaign=Badge_Grade)
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-%23FE5196?logo=conventionalcommits&logoColor=white)](https://conventionalcommits.org)
 
 <img src="https://gist.githubusercontent.com/andweeb/df3216345530234289b87cf5080c2c60/raw/8de399cfed82c137f793e9f580027b5246bc4379/presence.nvim.png" alt="presence.nvim">&#x200B;
