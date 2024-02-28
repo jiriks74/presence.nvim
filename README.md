@@ -2,7 +2,9 @@
 
 ![presence.nvim](https://gist.githubusercontent.com/andweeb/df3216345530234289b87cf5080c2c60/raw/8de399cfed82c137f793e9f580027b5246bc4379/presence.nvim.png)
 
-**[Features](#features)** | **[Installation](#installation)** | **[Configuration](#configuration)** | **[Troubleshooting](#troubleshooting)** | **[Development](#development)** | **[Contributing](#contributing)**
+**[Features](#features)** | **[Installation](#installation)** |
+**[Configuration](#configuration)** | **[Troubleshooting](#troubleshooting)** |
+**[Development](#development)** | **[Contributing](#contributing)**
 
 > Discord [Rich Presence](https://discord.com/rich-presence) plugin for [Neovim](https://neovim.io)
 
