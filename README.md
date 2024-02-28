@@ -1,6 +1,6 @@
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-%23FE5196?logo=conventionalcommits&logoColor=white)](https://conventionalcommits.org)
 
-![presence.nvim](https://gist.githubusercontent.com/andweeb/df3216345530234289b87cf5080c2c60/raw/8de399cfed82c137f793e9f580027b5246bc4379/presence.nvim.png)
+# ![presence.nvim](https://gist.githubusercontent.com/andweeb/df3216345530234289b87cf5080c2c60/raw/8de399cfed82c137f793e9f580027b5246bc4379/presence.nvim.png)
 
 **[Features](#features)** | **[Installation](#installation)** |
 **[Configuration](#configuration)** | **[Troubleshooting](#troubleshooting)** |
@@ -38,7 +38,6 @@ Use your favorite plugin manager
   event = "UIEnter",
 },
 ```
-
 
 ### Notes
 
