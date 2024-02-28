@@ -14,7 +14,8 @@
 - No Python/Node providers (or CoC) required
 - Cross-platform support: macOS, nixOS, Linux[\*](#notes),
 Windows, WSL
-- Startup time is fast(er than other Rich Presence plugins, by [kind of a lot](https://github.com/andweeb/presence.nvim/wiki/Plugin-Comparisons))
+- Startup time is fast(er than other Rich Presence plugins, by
+[kind of a lot](https://github.com/andweeb/presence.nvim/wiki/Plugin-Comparisons))
 - Written in Lua and [highly configurable](#configuration) in Lua
 (but also configurable in VimL if you want)
 - Manages Rich Presence across multiple Neovim instances in various environments
@@ -42,7 +43,8 @@ Use your favorite plugin manager
 - Requires [Neovim 0.5](https://github.com/neovim/neovim/releases/tag/v0.5.0)
 or higher
 - Rich Presence should work automatically after installation
-(unless you're using WSL, in which case [see here](https://github.com/andweeb/presence.nvim/wiki/Rich-Presence-in-WSL))
+(unless you're using WSL, in which case
+[see here](https://github.com/andweeb/presence.nvim/wiki/Rich-Presence-in-WSL))
 
 ## Configuration
 
@@ -121,11 +123,14 @@ let g:presence_line_number_text    = "Line %s out of %s"
   - Load a file and inspect the logs with `:messages`
 - If there is a `Failed to determine Discord IPC socket` error, your particular
 OS may not yet be supported
-  - If you don't see an existing [issue](https://github.com/jiriks74/presence.nvim/issues)
+  - If you don't see an existing
+  [issue](https://github.com/jiriks74/presence.nvim/issues)
   or [card](https://github.com/jiriks74/presence.nvim/projects/1#column-14183588)
-  for your OS, create a prefixed [issue](https://github.com/jiriks74/presence.nvim/issues/new)
+  for your OS, create a prefixed
+  [issue](https://github.com/jiriks74/presence.nvim/issues/new)
   (e.g. `[Void Linux]`)
-- Still not working and need help? Create a new [issue](https://github.com/jiriks74/presence.nvim/issues)!
+- Still not working and need help? Create a new
+[issue](https://github.com/jiriks74/presence.nvim/issues)!
 
 ## Development
 
@@ -139,10 +144,12 @@ errors: `luacheck lua`
 
 ## Contributing
 
-**Please use [Conventional Commits](https://www.conventionalcommits.org/) if you want to contribute.
+**Please use [Conventional Commits](https://www.conventionalcommits.org/)
+if you want to contribute.
 It makes everyones jobs easier.**
 
-**This project uses [StyLua](https://github.com/JohnnyMorganz/StyLua). Please format your code using StyLua for better readability**
+**This project uses [StyLua](https://github.com/JohnnyMorganz/StyLua).
+Please format your code using StyLua for better readability**
 
 Pull requests are very welcome, feel free to open an issue to work on
 or message [me (@jiriks74)](https://discordapp.com/users/517810049360461837) on my
