@@ -4,12 +4,13 @@ jobs:
   StyLuacheck:
     runs-on: ubuntu-latest
     steps:
+      - name: Install cargo-hack from crates.io
+        uses: baptiste0928/cargo-install@v3
+        with:
+          crate: stylua
+          version: 0.20.0
+
       - name: Checkout
         uses: actions/checkout@v3
-      - name: StyLua check
-        uses: JohnnyMorganz/stylua-action@v3
-        with:
-          token: ${{ secrets.GH_TOKEN }}
-          version: v0.18.2 # NOTE: we recommend pinning to a specific version in case of formatting changes
-          # CLI arguments
-          args: --check .
+      - name: Check code formatting
+        run: stylua -c .
