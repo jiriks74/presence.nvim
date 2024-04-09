@@ -792,7 +792,7 @@ function Presence:get_buttons(buffer, parent_dirpath)
 end
 
 -- Update Rich Presence for the provided vim buffer
-function Presence:update_for_buffer(buffer, should_debounce)
+function Presence:update_for_buffer(buffer)
 	-- Avoid unnecessary updates if the previous activity was for the current buffer
 	-- (allow same-buffer updates when line numbers are enabled)
 	if self.options.enable_line_number == 0 and self.last_activity.file == buffer then
