@@ -800,11 +800,11 @@ function Presence:update_for_buffer(buffer, should_debounce)
 		return
 	end
 
-	-- Parse vim buffer
-	local filename = self.get_filename(buffer, self.os.path_separator)
-	local parent_dirpath = self.get_dir_path(buffer, self.os.path_separator)
-	local extension = filename and self.get_file_extension(filename) or nil
-	self.log:debug(string.format("Parsed filename %s with %s extension", filename, extension or "no"))
+  -- Parse vim buffer
+  local filename = self.get_filename(buffer, self.os.path_separator)
+  local parent_dirpath = self.get_dir_path(buffer, self.os.path_separator)
+  local extension = filename and self.get_file_extension(filename) or nil
+  self.log:debug(string.format("Parsed filename %s with %s extension", filename or "no", extension or "no"))
 
 	-- Return early if there is no valid activity status text to set
 	local status_text = self:get_status_text(filename)
@@ -812,9 +812,9 @@ function Presence:update_for_buffer(buffer, should_debounce)
 		return self.log:debug("No status text for the given buffer, skipping...")
 	end
 
-	-- Get project information
-	self.log:debug(string.format("Getting project name for %s...", parent_dirpath))
-	local project_name, project_path = self:get_project_name(parent_dirpath)
+  -- Get project information
+  self.log:debug(string.format("Getting project name for %s...", parent_dirpath or "no"))
+  local project_name, project_path = self:get_project_name(parent_dirpath)
 
 	-- Check for blacklist
 	local is_blacklisted = #self.options.blacklist > 0 and self:check_blacklist(buffer, parent_dirpath, project_path)
@@ -825,10 +825,11 @@ function Presence:update_for_buffer(buffer, should_debounce)
 		return
 	end
 
-	local activity_set_at = os.time()
-	-- If we shouldn't debounce and we trigger an activity, keep this value the same.
-	-- Otherwise set it to the current time.
-	local relative_activity_set_at = should_debounce and self.last_activity.relative_set_at or os.time()
+  local activity_set_at = os.time()
+  -- If we shouldn't debounce and we trigger an activity, keep this value the same.
+  -- Otherwise set it to the current time.
+  -- local relative_activity_set_at = should_debounce and self.last_activity.relative_set_at or os.time()
+  local relative_activity_set_at = self.last_activity.relative_set_at or os.time()
 
 	self.log:debug(string.format("Setting activity for %s...", buffer and #buffer > 0 and buffer or "unnamed buffer"))
 
