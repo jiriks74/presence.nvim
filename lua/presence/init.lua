@@ -720,7 +720,7 @@ function Presence:check_blacklist(buffer, parent_dirpath, project_dirpath)
 	end
 
 	-- check against git repo blacklist
-	local git_repo = Presence:get_git_repo_url(parent_dirpath)
+	local git_repo = Presence.get_git_repo_url(parent_dirpath)
 	if git_repo then
 		self.log:debug(string.format("Checking git repo blacklist for %s", git_repo))
 	else
@@ -744,7 +744,7 @@ function Presence:check_blacklist(buffer, parent_dirpath, project_dirpath)
 	return false
 end
 
-function Presence:get_git_repo_url(parent_dirpath)
+function Presence.get_git_repo_url(parent_dirpath)
 	local repo_url
 
 	if parent_dirpath then
@@ -773,7 +773,7 @@ function Presence:get_buttons(buffer, parent_dirpath)
 	end
 
 	-- Retrieve the git repository URL
-	local repo_url = Presence:get_git_repo_url(parent_dirpath)
+	local repo_url = Presence.get_git_repo_url(parent_dirpath)
 
 	-- User configured a function to dynamically create buttons table
 	if type(self.options.buttons) == "function" then
