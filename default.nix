@@ -5,7 +5,7 @@ pkgs.mkShell {
   packages = with pkgs; [
     # Choose the build tools that you need
     act
-    luacheck
+    lua51Packages.luacheck
     stylua
   ];
 }
