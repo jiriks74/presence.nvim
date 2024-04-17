@@ -18,6 +18,6 @@ jobs:
           version: 0.20.0
 
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Check code formatting
         run: stylua -c .
