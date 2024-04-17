@@ -4,7 +4,14 @@ jobs:
   Luacheck:
     runs-on: ubuntu-latest
     steps:
+      - name: Update repositories
+        run: sudo apt update
+      - name: Install luarocks
+        uses: awalsh128/cache-apt-pkgs-action@latest
+        with:
+          packages: lua-check
       - name: Checkout
         uses: actions/checkout@v3
       - name: Luacheck linter
-        uses: lunarmodules/luacheck@v1
+        run: luacheck --config .luacheckrc .
+        # uses: lunarmodules/luacheck@v1
