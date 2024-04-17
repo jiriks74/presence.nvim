@@ -4,8 +4,12 @@ jobs:
   StyLuacheck:
     runs-on: ubuntu-latest
     steps:
+      - name: Update repositories
+        run: sudo apt update
       - name: Install cargo
-        run: sudo apt update && sudo apt install -y cargo
+        uses: awalsh128/cache-apt-pkgs-action@latest
+        with:
+          packages: cargo
 
       - name: Install StyLua from crates.io
         uses: baptiste0928/cargo-install@v3
