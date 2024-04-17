@@ -6,7 +6,7 @@ jobs:
     steps:
       - name: Update repositories
         run: sudo apt update
-      - name: Install luarocks
+      - name: Install Luacheck
         uses: awalsh128/cache-apt-pkgs-action@latest
         with:
           packages: lua-check
