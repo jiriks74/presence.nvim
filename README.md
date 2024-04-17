@@ -159,4 +159,4 @@ or message [me (@jiriks74)](https://discordapp.com/users/517810049360461837) on 
 
 Asset additions and changes are also welcome! Supported file types can be found in
 [`file_assets.lua`](lua/presence/file_assets.lua) and their referenced asset files
-can be found [in this folder](https://www.dropbox.com/sh/j8913f0gav3toeh/AADxjn0NuTprGFtv3Il1Pqz-a?dl=0).
+can be found in [the `icon-assets` branch](https://github.com/jiriks74/presence.nvim/tree/icon-assets).
