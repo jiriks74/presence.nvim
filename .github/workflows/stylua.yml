@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Install cargo
-        run: apt update && apt install -y cargo
+        run: sudo apt update && sudo apt install -y cargo
 
       - name: Install StyLua from crates.io
         uses: baptiste0928/cargo-install@v3
