@@ -151,5 +151,5 @@ guidelines before creating a PR.
 before creating a PR or an issue.**
 
 Pull requests are very welcome, feel free to open an issue to work on
-or [message me directly (@jiriks74)](https://discordapp.com/users/517810049360461837) on my
-[Discord server](https://discord.gg/cCq3qcB4jB)!
+or [message me directly (@jiriks74)](https://discordapp.com/users/517810049360461837)
+on my [Discord server](https://discord.gg/cCq3qcB4jB)!

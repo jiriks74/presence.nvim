@@ -34,8 +34,8 @@ When reporting a new issue or creating a feature request:
   If you cannot provide some information say so and why.
 4. Wait for feedback
   - I'm a college student doing this for free.
-  I'll try to respond ASAP but finding time for maintaining something like this
-  is hard so please keep that in mind.
+  I'll try to respond ASAP but finding time for maintaining something like
+  this is hard so please keep that in mind.
 
 ### Bugs/Issues
 
