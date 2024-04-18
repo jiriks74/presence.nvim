@@ -3,16 +3,17 @@
 ## Table of Contents
 
 - [Issues](#issues)
-  * [Bugs/Issues](#bugsissues)
-  * [Feature Requests](#feature-requests)
+  - [Bugs/Issues](#bugsissues)
+  - [Feature Requests](#feature-requests)
 - [Pull Requests](#pull-requests)
-  * [Easily use StyLua and Luacheck](#easily-use-stylua-and-luacheck)
-     + [Using `act`](#using-act)
-        - [First time setup](#first-time-setup)
-        - [Using `act`](#using-act-1)
-           * [Luacheck Issues](#luacheck-issues)
-           * [StyLua Issues](#stylua-issues)
-
+  - [Make sure code is up to standards](#make-sure-code-is-up-to-standards)
+    - [Using StyLua and Luacheck directly](#using-stylua-and-luacheck-directly)
+    - [Using `act`](#using-act)
+      - [First time setup](#first-time-setup)
+      - [Using `act`](#using-act)
+        - [Luacheck Issues](#luacheck-issues)
+        - [StyLua Issues](#stylua-issues)
+- [Assets](#assets)
 
 ## Issues
 
@@ -72,7 +73,25 @@ To have your PR merged more quickly you'll need to keep the following things in 
   used to. But please use Conventional commits for the PR title (and description if aplicable) for
   better readability and better commit message when the PR is squashed and merged.
 
-### Easily use StyLua and Luacheck
+### Make sure code is up to standards
+
+#### Using StyLua and Luacheck directly
+
+To run Luacheck use the following command in the repository's root directory:
+
+```bash
+luacheck --config .luacheckrc .
+```
+
+To format using StyLua first make sure that you're using StyLua `0.20.0` (`stylua --version`)
+to prevent any formatting changes between the versions. Then you can run the following command to
+format the code:
+
+```bash
+stylua .
+```
+
+#### Using `act`
 
 If you don't want to mess around with StyLua and Luacheck you can use [`act`]().
 It's a runner for Github workflows that allows you to run them locally.
@@ -83,7 +102,6 @@ it's merged.
 If you use `nix` and `direnv` I've setup `default.nix` and `.envrc` files in the project's root
 for easy environment setup.
 
-#### Using `act`
 
 ##### First time setup
 
@@ -205,3 +223,10 @@ Look a bit above in the output to see it:
 
 To fix these issues you can either manually modify the file using the diff
 or you can run `stylua .` and it will apply the formatting automatically.
+
+## Assets
+
+All the assets are in the [`file_assets.lua`](lua/presence/file_assets.lua).
+
+If you'd like to add/modify any assets create a PR to the mentioned
+[`file_assets.lua`](lua/presence/file_assets.lua).

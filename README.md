@@ -137,26 +137,19 @@ OS may not yet be supported
 ## Development
 
 - Clone the repo: `git clone https://github.com/jiriks74/presence.nvim.git`
-- Enable [logging](#configuration) and ensure that `presence.nvim` is **_not_**
+- Enable [logging](#configuration) and ensure that `presence.nvim` is **not**
 in the list of vim plugins in your config
 - Run `nvim` with your local changes: `nvim --cmd
 'set rtp+=path/to/your/local/presence.nvim' file.txt`
-- Ensure that there are no [luacheck](https://github.com/mpeterv/luacheck/)
-errors: `luacheck lua`
+- Make sure that your contribution follows
+[CONTRIBUTING.md](https://github.com/jiriks74/presence.nvim/blob/main/CONTRIBUTING.md)
+guidelines before creating a PR.
 
 ## Contributing
 
-**Please use [Conventional Commits](https://www.conventionalcommits.org/)
-if you want to contribute.
-It makes everyones jobs easier.**
-
-**This project uses [StyLua](https://github.com/JohnnyMorganz/StyLua).
-Please format your code using StyLua for better readability**
+**Please read [CONTRIBUTING.md](https://github.com/jiriks74/presence.nvim/blob/main/CONTRIBUTING.md)
+before creating a PR or an issue.**
 
 Pull requests are very welcome, feel free to open an issue to work on
-or message [me (@jiriks74)](https://discordapp.com/users/517810049360461837) on my
+or [message me directly (@jiriks74)](https://discordapp.com/users/517810049360461837) on my
 [Discord server](https://discord.gg/cCq3qcB4jB)!
-
-Asset additions and changes are also welcome! Supported file types can be found in
-[`file_assets.lua`](lua/presence/file_assets.lua) and their referenced asset files
-can be found in [the `icon-assets` branch](https://github.com/jiriks74/presence.nvim/tree/icon-assets).
