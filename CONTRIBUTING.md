@@ -1,6 +1,48 @@
 # Contributing
 
+## Table of Contents
+
+- [Issues](#issues)
+  * [Bugs/Issues](#bugsissues)
+  * [Feature Requests](#feature-requests)
+- [Pull Requests](#pull-requests)
+  * [Easily use StyLua and LuaCheck](#easily-use-stylua-and-luacheck)
+     + [Using `act`](#using-act)
+        - [First time setup](#first-time-setup)
+        - [Using `act`](#using-act-1)
+           * [LuaCheck Issues](#luacheck-issues)
+           * [StyLua Issues](#stylua-issues)
+
+
 ## Issues
+
+My repository uses Github's forms so it's easier to create a new issue or feature request with all
+the necessary information.
+
+When reporting a new issue or creating a feature request:
+
+1. Check that it doesn't exist already
+  - Even if an issue is closed add a command and/or reopen it. It's easier to track one issue in one
+  issue report than in 3.
+2. Use the appropriate form
+  - When clicking the `New Issue` button you can either select `Issue Report` or `Feature Request`
+3. Fill out all the information
+  - Eg. if the form asks for logs provide them. If you cannot provide some information say so and why.
+4. Wait for feedback
+  - I'm a college student doing this for free. I'll try to respond ASAP but finding time for maintaining
+  something like this is hard so please keep that in mind.
+
+### Bugs/Issues
+
+To create a new bug report just use the
+[Issue Form](https://github.com/jiriks74/presence.nvim/issues/new?assignees=jiriks74&labels=bug&projects=&template=bug_report.yml&title=%5BBug%5D%3A+)
+from the selection after clicking the `New Issue` button. The form will guide you through the process.
+
+### Feature Requests
+
+To create a feature request just use the
+[Feature Request Form](https://github.com/jiriks74/presence.nvim/issues/new?assignees=jiriks74&labels=enhancement&projects=&template=feature_request.yml&title=%5BFEAT%5D%3A+)
+from the selection after clicking the `New Issue` button. The form will guide you through the process.
 
 ## Pull Requests
 
