@@ -10,7 +10,7 @@
     - [Using StyLua and Luacheck directly](#using-stylua-and-luacheck-directly)
     - [Using `act`](#using-act)
       - [First time setup](#first-time-setup)
-      - [Using `act`](#using-act)
+      - [Running `act`](#running-act)
         - [Luacheck Issues](#luacheck-issues)
         - [StyLua Issues](#stylua-issues)
 - [Assets](#assets)
@@ -34,15 +34,15 @@ When reporting a new issue or creating a feature request:
   If you cannot provide some information say so and why.
 4. Wait for feedback
   - I'm a college student doing this for free.
-  I'll try to respond ASAP but finding time for maintaining something like this is hard
-  so please keep that in mind.
+  I'll try to respond ASAP but finding time for maintaining something like this
+  is hard so please keep that in mind.
 
 ### Bugs/Issues
 
 To create a new bug report just use the
 [Issue Form](https://github.com/jiriks74/presence.nvim/issues/new?assignees=jiriks74&labels=bug&projects=&template=bug_report.yml&title=%5BBug%5D%3A+)
-from the selection after clicking the `New Issue` button. The form will guide
-you through the process.
+from the selection after clicking the `New Issue` button.
+The form will guide you through the process.
 
 ### Feature Requests
 
@@ -93,9 +93,9 @@ To run Luacheck use the following command in the repository's root directory:
 luacheck --config .luacheckrc .
 ```
 
-To format using StyLua first make sure that you're using StyLua `0.20.0` (`stylua --version`)
-to prevent any formatting changes between the versions. Then you can run the following command to
-format the code:
+To format using StyLua first make sure that you're using StyLua `0.20.0`
+(`stylua --version`) to prevent any formatting changes between the versions.
+Then you can run the following command to format the code:
 
 ```bash
 stylua .
@@ -126,7 +126,7 @@ in the project's root for easy environment setup.
   utilize cache so any subsequent runs will take considerably less time
   unless there's a package update.
 
-##### Using `act`
+##### Running `act`
 
 Just run `act` without any arguments and it will run all the workflows in the `.github/workflows`
 directory.
