@@ -17,27 +17,32 @@
 
 ## Issues
 
-My repository uses Github's forms so it's easier to create a new issue or feature request with all
-the necessary information.
+My repository uses Github's forms so it's easier to create a new issue or
+feature request with all the necessary information.
 
 When reporting a new issue or creating a feature request:
 
 1. Check that it doesn't exist already
-  - Even if an issue is closed add a command and/or reopen it. It's easier to track one issue in one
+  - Even if an issue is closed add a command and/or reopen it.
+  It's easier to track one issue in one
   issue report than in 3.
 2. Use the appropriate form
-  - When clicking the `New Issue` button you can either select `Issue Report` or `Feature Request`
+  - When clicking the `New Issue` button you can either select `Issue Report`
+  or `Feature Request`
 3. Fill out all the information
-  - Eg. if the form asks for logs provide them. If you cannot provide some information say so and why.
+  - Eg. if the form asks for logs provide them.
+  If you cannot provide some information say so and why.
 4. Wait for feedback
-  - I'm a college student doing this for free. I'll try to respond ASAP but finding time for maintaining
-  something like this is hard so please keep that in mind.
+  - I'm a college student doing this for free.
+  I'll try to respond ASAP but finding time for maintaining something like this is hard
+  so please keep that in mind.
 
 ### Bugs/Issues
 
 To create a new bug report just use the
 [Issue Form](https://github.com/jiriks74/presence.nvim/issues/new?assignees=jiriks74&labels=bug&projects=&template=bug_report.yml&title=%5BBug%5D%3A+)
-from the selection after clicking the `New Issue` button. The form will guide you through the process.
+from the selection after clicking the `New Issue` button. The form will guide
+you through the process.
 
 ### Feature Requests
 
@@ -47,31 +52,36 @@ from the selection after clicking the `New Issue` button. The form will guide yo
 
 ## Pull Requests
 
-*I know that it can be annoying to adopt standard from every project but if there weren't any the
-project would be soon unreadable and unmaintainable.*
+*I know that it can be annoying to adopt standard from every project but if
+there weren't any the project would be soon unreadable and unmaintainable.*
 
 To have your PR merged more quickly you'll need to keep the following things in mind:
 
 - StyLua
-  - While I understand that everybody is used to their code formatting I'll have to enforce StyLua.
-  There were contributions that reformatted the whole codebase while modifying 2 lines of code.
-  It takes a lot of time to go through such contributions and figure out what was really changed
-  and what was their formatting tool.
+  - While I understand that everybody is used to their code
+  formatting I'll have to enforce StyLua. There were contributions that
+  reformatted the whole codebase while modifying 2 lines of code.
+  It takes a lot of time to go through such contributions and figure out
+  what was really changed and what was their formatting tool.
   - So please use StyLua (`v0.20.0`) to format your code.
 - Luacheck
   - Luacheck is here to catch errors that anyone could overlook.
-  Some warnings/issues may feel like small things when they basically don't impact anything
-  (eg. unused argument) but once there's enough issues it becomes hard to find the *real* ones
-  in the large number of issues that *don't matter*.
+  Some warnings/issues may feel like small things when they basically don't
+  impact anything (eg. unused argument) but once there's enough issues it
+  becomes hard to find the *real* ones in the large number of issues
+  that *don't matter*.
   - So please use Luacheck and fix any issues/warnings you can.
 - Conventional commits
-  - Everybody is used to writing commits their own way. But everybody communicates differently and
-  people like to commit things like: `test`, `test2`, `small changes`, etc. It's then hard to figure
-  out what that commit actually means, what changes were made and what parts of the codebase
-  are affected.
-  - Your PRs will most likely be squashed and merged so you can keep doing commit messages as you're
-  used to. But please use Conventional commits for the PR title (and description if aplicable) for
-  better readability and better commit message when the PR is squashed and merged.
+  - Everybody is used to writing commits their own way. But everybody
+  communicates differently and people like to commit things like:
+  `test`, `test2`, `small changes`, etc. It's then hard to figure
+  out what that commit actually means, what changes were made and what parts of
+  the codebase are affected.
+  - Your PRs will most likely be squashed and merged so you can keep doing
+  commit messages as you're used to.
+  But please use Conventional commits for the PR title
+  (and description if aplicable) for better readability and better commit
+  message when the PR is squashed and merged.
 
 ### Make sure code is up to standards
 
@@ -93,14 +103,14 @@ stylua .
 
 #### Using `act`
 
-If you don't want to mess around with StyLua and Luacheck you can use [`act`]().
+If you don't want to mess around with StyLua and Luacheck you can use [`act`](https://github.com/nektos/act).
 It's a runner for Github workflows that allows you to run them locally.
 
-Using `act` you can run the same StyLua and Luacheck workflows that will run on your PR before
-it's merged. 
+Using `act` you can run the same StyLua and Luacheck workflows
+that will run on your PR before it's merged. 
 
-If you use `nix` and `direnv` I've setup `default.nix` and `.envrc` files in the project's root
-for easy environment setup.
+If you use `nix` and `direnv` I've setup `default.nix` and `.envrc` files
+in the project's root for easy environment setup.
 
 
 ##### First time setup
@@ -111,9 +121,10 @@ for easy environment setup.
 3. Run `act`
 4. Select the `Medium` image size
 5. Let it run
-  - The initial run takes longer because it requires pulling the Docker images and installing
-  the necessary packages within the container. My workflows utilize cache so any subsequent runs
-  will take considerably less time unless there's a package update.
+  - The initial run takes longer because it requires pulling the Docker images
+  and installing the necessary packages within the container. My workflows
+  utilize cache so any subsequent runs will take considerably less time
+  unless there's a package update.
 
 ##### Using `act`
 
@@ -122,13 +133,13 @@ directory.
 
 You should see something like:
 
-```
+```bash
 [StyLua/StyLua] 🏁  Job succeeded
 ```
 
 and
 
-```
+```bash
 [Luacheck/Luacheck ] 🏁  Job succeeded
 ```
 
@@ -136,13 +147,13 @@ if there were no issues found.
 
 If there were issues you'll see something like this at the end of `act` output:
 
-```
+```bash
 Error: Job 'StyLua' failed
 ```
 
 or
 
-```
+```bash
 Error: Job 'Luacheck' failed
 ```
 
@@ -153,7 +164,7 @@ only for the fist one that failed.
 
 If there are issues the output will have something like this:
 
-```
+```bash
 [Luacheck/Luacheck ]   ❌  Failure - Main Luacheck linter
 [Luacheck/Luacheck ] exitcode '2': failure
 [Luacheck/Luacheck ] ⭐ Run Post Install Luacheck
@@ -162,9 +173,10 @@ If there are issues the output will have something like this:
 [Luacheck/Luacheck ] 🏁  Job failed
 ```
 
-To know what exactly what's wrong look a bit above in the output and see somethings like:
+To know what exactly what's wrong look a bit above in the output and see
+somethings like:
 
-```
+```bash
 [Luacheck/Luacheck ]   🐳  docker exec cmd=[bash --noprofile --norc -e -o pipefail /var/run/act/workflow/3] user= workdir=
 | Checking lua/lib/log.lua                          OK
 | Checking lua/presence/discord.lua                 OK
@@ -183,7 +195,7 @@ To know what exactly what's wrong look a bit above in the output and see somethi
 
 If there are issues the output will have something like this:
 
-```
+```bash
 [StyLua/StyLua]   ❌  Failure - Main Check code formatting
 [StyLua/StyLua] exitcode '1': failure
 [StyLua/StyLua] ⭐ Run Post Install cargo
@@ -192,10 +204,11 @@ If there are issues the output will have something like this:
 [StyLua/StyLua] 🏁  Job failed
 ```
 
-StyLua creates a `diff` between the expected formatting and the formatting that is used.
+StyLua creates a `diff` between the expected formatting
+and the formatting that is used.
 Look a bit above in the output to see it:
 
-```
+```bash
 [StyLua/StyLua]   🐳  docker exec cmd=[bash --noprofile --norc -e -o pipefail /var/run/act/workflow/4] user= workdir=
 | Diff in ./lua/presence/init.lua:
 | 12721272 | function Presence:handle_buf_add()
