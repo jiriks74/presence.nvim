@@ -6,11 +6,11 @@
   * [Bugs/Issues](#bugsissues)
   * [Feature Requests](#feature-requests)
 - [Pull Requests](#pull-requests)
-  * [Easily use StyLua and LuaCheck](#easily-use-stylua-and-luacheck)
+  * [Easily use StyLua and Luacheck](#easily-use-stylua-and-luacheck)
      + [Using `act`](#using-act)
         - [First time setup](#first-time-setup)
         - [Using `act`](#using-act-1)
-           * [LuaCheck Issues](#luacheck-issues)
+           * [Luacheck Issues](#luacheck-issues)
            * [StyLua Issues](#stylua-issues)
 
 
@@ -57,12 +57,12 @@ To have your PR merged more quickly you'll need to keep the following things in 
   It takes a lot of time to go through such contributions and figure out what was really changed
   and what was their formatting tool.
   - So please use StyLua (`v0.20.0`) to format your code.
-- LuaCheck
-  - LuaCheck is here to catch errors that anyone could overlook.
+- Luacheck
+  - Luacheck is here to catch errors that anyone could overlook.
   Some warnings/issues may feel like small things when they basically don't impact anything
   (eg. unused argument) but once there's enough issues it becomes hard to find the *real* ones
   in the large number of issues that *don't matter*.
-  - So please use LuaCheck and fix any issues/warnings you can.
+  - So please use Luacheck and fix any issues/warnings you can.
 - Conventional commits
   - Everybody is used to writing commits their own way. But everybody communicates differently and
   people like to commit things like: `test`, `test2`, `small changes`, etc. It's then hard to figure
@@ -72,12 +72,12 @@ To have your PR merged more quickly you'll need to keep the following things in 
   used to. But please use Conventional commits for the PR title (and description if aplicable) for
   better readability and better commit message when the PR is squashed and merged.
 
-### Easily use StyLua and LuaCheck
+### Easily use StyLua and Luacheck
 
-If you don't want to mess around with StyLua and LuaCheck you can use [`act`]().
+If you don't want to mess around with StyLua and Luacheck you can use [`act`]().
 It's a runner for Github workflows that allows you to run them locally.
 
-Using `act` you can run the same StyLua and LuaCheck workflows that will run on your PR before
+Using `act` you can run the same StyLua and Luacheck workflows that will run on your PR before
 it's merged. 
 
 If you use `nix` and `direnv` I've setup `default.nix` and `.envrc` files in the project's root
@@ -131,7 +131,7 @@ Error: Job 'Luacheck' failed
 If both workflows fail it will show `Error: Job 'xy' failed`
 only for the fist one that failed.
 
-###### LuaCheck Issues
+###### Luacheck Issues
 
 If there are issues the output will have something like this:
 
