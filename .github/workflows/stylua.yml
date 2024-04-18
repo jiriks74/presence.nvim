@@ -9,7 +9,7 @@ jobs:
       - name: Install cargo
         uses: awalsh128/cache-apt-pkgs-action@latest
         with:
-          packages: cargo
+          packages: cargo libssh2-1
 
       - name: Install StyLua from crates.io
         uses: baptiste0928/cargo-install@v3
