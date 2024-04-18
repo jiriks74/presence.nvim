@@ -1,7 +1,7 @@
 name: StyLua
 on: [push, pull_request]
 jobs:
-  StyLuacheck:
+  StyLua:
     runs-on: ubuntu-latest
     steps:
       - name: Update repositories
