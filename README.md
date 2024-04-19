@@ -36,7 +36,7 @@ A Discord [Rich Presence](https://discord.com/rich-presence) plugin for [Neovim]
 
 - Light and unobtrusive
 - No Python/Node providers (or CoC) required
-- Cross-platform support: macOS, nixOS, Linux[\*](#notes),
+- Cross-platform support: macOS, nixOS, Linux
 Windows, WSL
 - Startup time is fast(er than other Rich Presence plugins, by
 [kind of a lot](https://github.com/jiriks74/presence.nvim/wiki/Plugin-Comparisons))
