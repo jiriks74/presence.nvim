@@ -18,7 +18,7 @@ This repository uses
 - Cross-platform support: macOS, nixOS, Linux[\*](#notes),
 Windows, WSL
 - Startup time is fast(er than other Rich Presence plugins, by
-[kind of a lot](https://github.com/andweeb/presence.nvim/wiki/Plugin-Comparisons))
+[kind of a lot](https://github.com/jiriks74/presence.nvim/wiki/Plugin-Comparisons))
 - Written in Lua and [highly configurable](#configuration) in Lua
 (but also configurable in VimL if you want)
 - Manages Rich Presence across multiple Neovim instances in various environments
@@ -26,6 +26,11 @@ Windows, WSL
 - Now with Flatpak support!
 
 ## Installation
+
+> [!Note]
+>
+> Requires [Neovim 0.5](https://github.com/neovim/neovim/releases/tag/v0.5.0)
+> or higher
 
 Use your favorite plugin manager
 
@@ -40,13 +45,13 @@ Use your favorite plugin manager
 },
 ```
 
-### Notes
+Rich Presence should work automatically after installation
 
-- Requires [Neovim 0.5](https://github.com/neovim/neovim/releases/tag/v0.5.0)
-or higher
-- Rich Presence should work automatically after installation
-(unless you're using WSL, in which case
-[see here](https://github.com/andweeb/presence.nvim/wiki/Rich-Presence-in-WSL))
+> [!Important]
+>
+> If you're using WSL1 there's additional setup needed.
+> WSL2 **is not supported** but ***may*** work.
+> [**See Wiki**](https://github.com/jiriks74/presence.nvim/wiki/Rich-Presence-in-WSL))
 
 ## Configuration
 
