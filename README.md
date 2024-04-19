@@ -2,15 +2,35 @@
 
 A Discord [Rich Presence](https://discord.com/rich-presence) plugin for [Neovim](https://neovim.io)
 
-This repository uses
-[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-%23FE5196?logo=conventionalcommits&logoColor=white)](https://conventionalcommits.org)
-
 **[Features](#features)** | **[Installation](#installation)** |
 **[Configuration](#configuration)** | **[Troubleshooting](#troubleshooting)** |
 **[Development](#development)** | **[Contributing](#contributing)**
 
 
 ![Presence demo](https://gist.githubusercontent.com/andweeb/df3216345530234289b87cf5080c2c60/raw/ad916fec8de921d0021801a0af877a5349621e7e/presence-demo-a.gif)
+
+<h2 align="center">Stats</h2>
+<p align="center">
+  <img alt="Conventional Commits" src="https://img.shields.io/badge/Conventional%20Commits-1.0.0-%23FE5196?logo=conventionalcommits&logoColor=white)](https://conventionalcommits.org">
+</p>
+<p align="center">
+  <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/jiriks74/presence.nvim">
+  <img alt="GitHub forks" src="https://img.shields.io/github/forks/jiriks74/presence.nvim">
+</p>
+<p align="center">
+  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/jiriks74/presence.nvim">
+  <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/jiriks74/presence.nvim">
+  <img alt="GitHub License" src="https://img.shields.io/github/license/jiriks74/presence.nvim">
+
+</p>
+<p align="center">
+  <img alt="Open Issues" src="https://img.shields.io/github/issues-raw/jiriks74/presence.nvim"?label=Open Issues">
+  <img alt="Closed Issues" src="https://img.shields.io/github/issues-closed-raw/jiriks74/presence.nvim"?label=Closed Issues">
+</p>
+<p align="center">
+  <img alt="Luacheck Workflow Status" src="https://img.shields.io/github/actions/workflow/status/jiriks74/presence.nvim/luacheck.yml?label=Luacheck">
+  <img alt="StyLua Workflow status" src="https://img.shields.io/github/actions/workflow/status/jiriks74/presence.nvim/stylua.yml?label=StyLua">
+</p>
 
 ## Features
 
