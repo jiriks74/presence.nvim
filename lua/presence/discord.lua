@@ -142,6 +142,7 @@ function Discord:authorize(on_authorize)
 	local payload = {
 		client_id = self.client_id,
 		v = 1,
+                nonce = "initial-ready",
 	}
 
 	self:call(self.opcodes.auth, payload, on_authorize)
