@@ -439,7 +439,10 @@ function Presence:get_project_name(file_path)
 	if not file_path then
 		return nil
 	end
-
+	-- if filepath has oil:// remove it
+	if file_path:find("^oil://") then
+		file_path = file_path:gsub("oil://", "")
+	end
 	-- Escape quotes in the file path
 	file_path = file_path:gsub([["]], [[\"]])
 
@@ -763,6 +766,10 @@ end
 
 -- Get either user-configured buttons or the create default "View Repository" button definition
 function Presence:get_buttons(buffer, parent_dirpath)
+	if parent_dirpath ~= nil and parent_dirpath:find("^oil://") then
+		parent_dirpath = parent_dirpath:gsub("oil://", "")
+	end
+
 	-- User configured a static buttons table
 	if type(self.options.buttons) == "table" then
 		local is_plural = #self.options.buttons > 1

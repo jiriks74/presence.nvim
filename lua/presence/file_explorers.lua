@@ -7,4 +7,5 @@ return {
 	["TelescopePrompt"] = "Telescope",
 	["neo-tree"] = "Neotree",
 	["fern"] = "Fern",
+	["oil"] = "Oil",
 }
