@@ -254,6 +254,7 @@ return {
 	ts = { "TypeScript", "typescript" },
 	tsx = { "React", "react" },
 	txt = { "Text file", "text" },
+	typ = { "Typst", "typst" },
 	uc = { "UnrealScript", "unreal" },
 	v = { "Vlang", "vlang" },
 	vsh = { "Vlang shell script", "vlang" },
