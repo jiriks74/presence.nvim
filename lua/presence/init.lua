@@ -831,7 +831,7 @@ function Presence:get_buttons(buffer, parent_dirpath)
 end
 
 -- Update Rich Presence for the provided vim buffer
-function Presence:update_for_buffer(buffer, should_debounce)
+function Presence:update_for_buffer(buffer)
 	-- Avoid unnecessary updates if the previous activity was for the current buffer
 	-- (allow same-buffer updates when line numbers are enabled)
 	if self.options.enable_line_number == 0 and self.last_activity.file == buffer then
@@ -843,7 +843,7 @@ function Presence:update_for_buffer(buffer, should_debounce)
 	local filename = self.get_filename(buffer, self.os.path_separator)
 	local parent_dirpath = self.get_dir_path(buffer, self.os.path_separator)
 	local extension = filename and self.get_file_extension(filename) or nil
-	self.log:debug(string.format("Parsed filename %s with %s extension", filename, extension or "no"))
+	self.log:debug(string.format("Parsed filename %s with %s extension", filename or "no", extension or "no"))
 
 	-- Return early if there is no valid activity status text to set
 	local status_text = self:get_status_text(filename)
@@ -852,7 +852,7 @@ function Presence:update_for_buffer(buffer, should_debounce)
 	end
 
 	-- Get project information
-	self.log:debug(string.format("Getting project name for %s...", parent_dirpath))
+	self.log:debug(string.format("Getting project name for %s...", parent_dirpath or "no"))
 	local project_name, project_path = self:get_project_name(parent_dirpath)
 
 	-- Check for blacklist
@@ -868,7 +868,8 @@ function Presence:update_for_buffer(buffer, should_debounce)
 	local activity_set_at = os.time()
 	-- If we shouldn't debounce and we trigger an activity, keep this value the same.
 	-- Otherwise set it to the current time.
-	local relative_activity_set_at = should_debounce and self.last_activity.relative_set_at or os.time()
+	-- local relative_activity_set_at = should_debounce and self.last_activity.relative_set_at or os.time()
+	local relative_activity_set_at = self.last_activity.relative_set_at or os.time()
 
 	self.log:debug(string.format("Setting activity for %s...", buffer and #buffer > 0 and buffer or "unnamed buffer"))
 
