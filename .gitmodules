@@ -1,0 +1,8 @@
+[submodule ".github/workflows/actions/cache-apt-pkgs-action"]
+	path = .github/workflows/actions/cache-apt-pkgs-action
+	url = https://github.com/awalsh128/cache-apt-pkgs-action
+  branch = master
+[submodule ".github/workflows/actions/cargo-install"]
+	path = .github/workflows/actions/cargo-install
+	url = https://github.com/baptiste0928/cargo-install
+  branch = main
