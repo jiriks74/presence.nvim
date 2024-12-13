@@ -4,16 +4,13 @@ jobs:
   Luacheck:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          submodules: true
-
       - name: Update repositories
         run: sudo apt update
       - name: Install Luacheck
-        uses: ./.github/workflows/actions/cache-apt-pkgs-action
+        uses: awalsh128/cache-apt-pkgs-action@latest
         with:
           packages: lua-check
+      - name: Checkout
+        uses: actions/checkout@v4
       - name: Luacheck linter
         run: luacheck --config .luacheckrc .

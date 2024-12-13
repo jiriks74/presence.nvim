@@ -4,23 +4,20 @@ jobs:
   StyLua:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          submodules: true
-
       - name: Update repositories
         run: sudo apt update
       - name: Install cargo
-        uses: ./.github/workflows/actions/cache-apt-pkgs-action
+        uses: awalsh128/cache-apt-pkgs-action@latest
         with:
           packages: cargo libssh2-1
 
       - name: Install StyLua from crates.io
-        uses: ./.github/workflows/actions/cargo-install
+        uses: baptiste0928/cargo-install@v3
         with:
           crate: stylua
           version: 0.20.0
 
+      - name: Checkout
+        uses: actions/checkout@v4
       - name: Check code formatting
         run: stylua -c .
